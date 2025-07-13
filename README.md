@@ -93,45 +93,42 @@
 ## 🔧 Installation & Quick Start
 
 
-# 1. Clone repo
+### 1. Clone repo
 ```bash
 git clone https://github.com/SindhePandurangBITS/Advanced-RAG-for-Finance-and-Market-Intelligence.git
 cd Advanced-RAG-for-Finance-and-Market-Intelligence
 ```
-# 2. Create & activate venv
+### 2. Create & activate venv
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-# 3. Install dependencies
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-# 4. Start supporting services
+### 4. Start supporting services
 - Create a `.env` file in the root directory.
 - Add your `API keys (OpenAI, Cohere, LangChain, Tavily, etc.)` as shown in `utils/api_keys_env.py.`
-# 5. Download & Prepare Data
+### 5. Download & Prepare Data
 ```bash
 python utils/download_and_load_pdfs.py
 ```
-# 6. Run Main Pipeline (Jupyter Notebook)
+### 6. Run Main Pipeline (Jupyter Notebook)
 ```bash
 jupyter notebook notebooks/advanced_rag(all_stages).ipynb
 ```
-# 7. Run Queries Individually
+### 7. Run Queries Individually
 ```bash
 assets\examples/queries.md
 ```
-# 6. Launch the Streamlit Dashboard
+### 6. Launch the Streamlit Dashboard
 ```bash
 streamlit run streamlit.py
 ```
 ---
 
-Certainly! Here’s a **documentation & notebooks** section crafted for your **Advanced RAG for BFSI/Marketing** project, reflecting your structure and focus:
-
----
 
 ## 📖 Documentation & Notebooks
 
