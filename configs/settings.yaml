@@ -1,0 +1,59 @@
+# configs/settings.yaml
+
+# API Keys 
+OPENAI_API_KEY: "your-openai-api-key"
+COHERE_API_KEY: "your-cohere-api-key"
+LANGCHAIN_API_KEY: "your-langchain-api-key"
+TAVILY_API_KEY: "your-tavily-api-key"
+
+# Embedding & LLM Models
+embedding:
+  provider: "openai"
+  model: "text-embedding-ada-002"
+
+llm:
+  provider: "openai"
+  chat_model: "gpt-3.5-turbo"
+  rerank_model: "cohere-rerank-english-v3.0"
+  advanced_model: "gpt-4"
+  temperature: 0
+
+# Indexing Parameters
+indexing:
+  chunk_size: 800
+  chunk_overlap: 100
+  colbert_index_name: "my_rag_index"
+  max_document_length: 180
+
+# Retrieval
+retrieval:
+  top_k: 10
+  reranker: "cohere"
+  reranker_model: "rerank-english-v3.0"
+  use_colbert: false
+  use_raptor: true
+
+# Generation
+generation:
+  use_self_rag: true
+  prompt_template: "rlm/rag-prompt"
+  concise_answers: true
+
+# Routing
+routing:
+  enabled: true
+  domains:
+    - tech
+    - manufacturing
+    - finance
+    - healthcare
+
+# Multi-query Decomposition
+multi_query:
+  enabled: true
+  sub_question_count: 3
+
+# Paths
+data_dir: "./data"
+output_dir: "./outputs"
+index_dir: "./vectorstore"

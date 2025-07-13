@@ -1,0 +1,42 @@
+# Core LLM & RAG
+langchain>=0.1.18
+langchain-openai>=0.1.5
+langchain-community>=0.0.32
+langchain-core>=0.1.46
+langgraph>=0.0.34
+
+# Embedding & Vector DB
+chromadb>=0.4.24
+ragatouille>=0.0.7
+
+# PDF/Text Processing
+pypdf>=3.17.0
+beautifulsoup4>=4.12.3
+
+# OpenAI/Cohere/Other APIs
+openai>=1.25.0
+cohere>=4.49
+
+# Document loaders, Output parsers, YAML
+tiktoken>=0.6.0
+python-dotenv>=1.0.1
+PyYAML>=6.0
+
+# ML/Clustering/UMAP
+scikit-learn>=1.5.0
+umap-learn>=0.5.5
+numpy>=1.24
+pandas>=2.2.2
+
+# Utilities
+requests>=2.32.4
+
+# For type checking & modern Python
+typing-extensions>=4.5.0
+
+# Jupyter/IPython notebooks
+ipython>=8.24.0
+jupyter>=1.0.0
+
+# Tavily or other web search APIs via LangChain
+tavily-search>=0.3.0
